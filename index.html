@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="css/styles.css" type="text/css" media="screen" title="no title" charset="utf-8">
+	<title>Javascript Practice</title>
+</head>
+<body>
+	<h1>Javascript</h1>
+    
+    <p>For Desktop Viewing. This is to show Javascript Code not mobile responsiveness. I show that in other projects.</p>
+    
+    <section class="algorithm">
+        <h1 class="title">Palindrome</h1>
+        <p class="desc">Check if a word is a palindrome. A palindrome is a word that is the same when spelled backwards.</p>
+        <form>
+            <input type="text" placeholder="Enter value" name="palStr" id="palStr" class="input"/>
+            <button type="button" class="submitBtn" onClick="palindrome(palStr)">Go!</button>
+        </form>
+        <h2 class="resultHeader">Result:</h2>
+        <p class="result" id="palResult"></p>
+    </section>
+    
+    <section class="algorithm">
+        <h1>Show DateTime</h1>
+        <button onClick="showDateTime()">Go</button>
+        <p id="dateTimeP"></p>
+    </section>
+    
+    <section class="algorithm">
+        <h1 class="title">Template</h1>
+        <p class="desc">This is for when adding more.</p>
+        <form>
+            <input type="text" placeholder="Enter value" name="3Num" id="3Num" class="input"/>
+            <button type="button" class="submitBtn" onClick="three(3Num)">Go!</button>
+        </form>
+        <h2 class="resultHeader">Result:</h2>
+        <p class="result" id="3Result"> </p>
+    </section>
+    
+    <section class="algorithm">
+        <h1>Show Coordinates</h1>
+        <button onClick="showCoords()">Go</button>
+        <p id="coordsP"></p>
+    </section>
+    
+    <section class="algorithm">
+        <h1>Price Calculator</h1>
+        <p>Item = $5.</p>
+        <p>Choose Quantity:</p>
+        <p id="quantityP"></p>
+        <input id="slider" class="slider" type="range" min="0" max="10" step="1" value="0" onChange="updateQuantity(this.value)">
+        <button onClick="price()">Go</button>
+        <p id="priceP"></p>
+    </section>
+    
+<!--<script src="http://code.jquery.com/jquery-1.11.0.min.js" type="text/javascript" charset="utf-8"></script>    Include for JQuery-->
+	<script src="js/js.js" type="text/javascript" charset="utf-8"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
